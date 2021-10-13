@@ -1,0 +1,58 @@
+/* FONT IMPORTS */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Sora:wght@300;400&display=swap");
+
+/* UNIVERSAL RESET */
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* ROOT VARIABLE PRESETS */
+:root {
+    --nav-font: font-family: 'Montserrat', sans-serif;
+    --product-font: font-family: 'Sora', sans-serif;
+}
+a, li {
+  text-decoration: none;
+  list-style-type: none;
+}
+/* THE ENTIRE GRID */
+.grids-container {
+  display: grid;
+  grid-template-areas: "aside nav nav"
+                      "aside main main"
+                      "aside main main"
+                      "aside main main";
+}
+
+/* NAVIGATION */
+.navbar {
+  display: flex;
+  grid-area: nav;
+  align-items: flex-end;
+  text-transform: capitalize;
+  height: 10vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul .links {
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.navbar ul .links {
+  color: black;
+}
+
+.navbar ul .links:hover {
+  cursor: pointer;
+  border-bottom: 1.5px solid black;
+
+}
