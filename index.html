@@ -12,64 +12,43 @@
         ></script>
     </head>
     <body>
-        <!-- TODO: 
-  *BUILD NAV >
-  *BUILD MAIN CONTENT >
-  *BUILD SIDE FILTER
-  *BUILD CART -->
-        <div class="creator"><h1>JETTISON</h1></div>
+        <!-- TODO: BUILD NAVBAR --> 
+        <!-- TODO: BUILD CART -->
+        <!-- TODO: BUILD DROPDOWN -->
+        <!-- TODO: BUILD MAIN CONTENT -->
         <nav class="navbar">
-            <div class="navigation-links">
+            <div class="links-container">
                 <ul>
-                    <li><a href="#" class="links current">clothing</a></li>
-                    <li><a href="#" class="links">Shoes</a></li>
-                    <li><a href="#" class="links">accessories</a></li>
-                    <li><a href="#" class="links">All</a></li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="#" class="icon-links"
-                            ><i class="fas fa-search"></i>search</a
-                        >
-                    </li>
-                    <li><a href="#" class="icon-links"></a></li>
-                    <div class="cart-btn">
-                        <a href="#" class="icon-links"></a
-                        ><i class="fas fa-shopping-cart"></i
-                        ><span class="cart-total">0</span>
-                    </div>
-                </ul>
+                <li><a href="#" class="links current">clothing</a></li>
+                <li><a href="#" class="links">shoes</a></li>
+                <li><a href="#" class="links">accessories</a></li>
+                <li><a href="#" class="links">all</a></li>
+            </ul>
+            <ul>
+                <li><i class="fas fa-search"></i></li>
+                <li><a href="#">login/signup</a></li>
+                <div class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-items">0</span>
+                </div>
+            </ul>
             </div>
         </nav>
-        <main class="products">
-            <div class="category-container">
-                <h1>clothing / <span class="category-title">t-shirts</span></h1>
-            </div>
-            <div class="product-items">
-                <!-- SINGLE PRODUCT -->
-                <article class="product">
-                    <div class="img-container">
-                        <img src="/images/tshirts/dexcneck.png" alt="" />
-                        <span class="price">$9.99</span>
-                    </div>
-                    <h3 class="product-title">black t-shirt</h3>
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-cart-plus"></i>
-                        add to cart
-                    </button>
-                </article>
-                <article class="product">
-                    <div class="img-container">
-                        <img src="/images/tshirts/dexcneck.png" alt="" />
-                        <span class="price">$9.99</span>
-                    </div>
-                    <h3 class="product-title">black t-shirt</h3>
-                    <button class="bag-btn" data-id="1">
-                        <i class="fas fa-cart-plus"></i>
-                        add to cart
-                    </button>
-                </article>
-            </div>
-        </main>
+        <div class="cart-overlay ">
+            <aside class="cart ">
+                <span class="close-cart">
+                    <i class="fas fa-window-close"></i>
+                </span>
+                <h2>your cart</h2>
+                <!-- CART ITEM -->
+
+                <!-- CART FOOTER -->
+                <div class="cart-footer">
+                    <h3>your total: $ <span class="cart-total">0</span></h3>
+                    <button class="clear-cart banner-btn">clear cart</button>
+                </div>
+            </aside>
+        </div>
+        <script src="app.js"></script>
     </body>
 </html>
